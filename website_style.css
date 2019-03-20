@@ -1,0 +1,165 @@
+
+body{
+	margin: 0px;
+	background-color:#adebeb;
+}
+
+h1{
+	color: 	 #145252;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-transform: capitalize;
+	font:30px arial, san-serif;
+	left: 50px;
+	position: static;
+	margin: 10px;
+	top: 0px;
+}
+
+h1 a{
+	text-decoration: none;
+	color: #145252;
+}
+
+
+h2{
+	padding: none;
+	margin: 0;
+}
+
+
+nav ul{
+	list-style-type: none;
+}
+
+nav{
+	padding: 0px;
+	background-color: #666;
+	position: sticky;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	border:none;
+	z-index: 1;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav button{
+	width: 120%;
+	background-color: #666;
+	border: none;
+	color: white;
+	padding: 20px 30px;
+	margin: 0;
+	-webkit-transition-duration:0.2s;
+}
+
+nav button:hover{
+	color: black;
+	background-color: #999;
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	background-color: #666;
+	padding: 10px 20px;
+	color: white;
+}
+
+nav ul li input{
+	border: none;
+}
+
+
+.nav-content{
+	display: none;
+}
+.nav-content a:hover{
+	background-color: #999;
+	color: black;
+}
+
+
+.dropdown:hover .nav-content{
+	display: block;
+	position: absolute;
+}
+
+nav ul li button:hover .nav-content{
+	display: block;
+}
+
+
+
+header ul{
+	list-style-type: none;
+	right: 10px;
+	position: absolute;
+	top: 0px;
+}
+header ul li{
+	display: inline-block;
+
+}
+
+header ul li a{
+	border: none;
+	background-color:#adebeb;
+	color: black;
+	text-decoration: none;
+	position: static;
+	right: 20%;
+	margin: 10px;
+}
+
+header ul li a:hover{
+	font-style: italic;
+}
+
+main button{
+	position: absolute;
+	right: 30%;
+	background-color:  #239090;
+	padding:30px;
+	border: none;
+	color: #0a2929;
+	text-transform: capitalize;
+	font:30px arial, san-serif;
+	top: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 4px;
+	-webkit-transition-duration:0.4s;
+	font-weight: bold;
+
+}
+
+main button:hover{
+	background-color: #1e7b7b;
+	color: #051515;
+}
+.dropdown-menu{
+	display: none;
+}
+
+@media screen and (max-width: 750px){
+	.dropdown{
+		display: none;
+	}
+
+	.dropdown-menu{
+		display: block;
+	}
+
+	.dropdown-menu:hover .nav-content{
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	}	
+
+
+}
